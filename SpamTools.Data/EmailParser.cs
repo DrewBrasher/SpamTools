@@ -27,6 +27,7 @@ public class EmailParser
 
 		return receivedIps;
     }
+
     public IEnumerable<string> GetUrls()
     {
         if (!FileLines.Any()) { return new List<string>(); }

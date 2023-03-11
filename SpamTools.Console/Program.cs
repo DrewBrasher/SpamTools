@@ -10,7 +10,7 @@ var ips = emailParser.GetRecievedIpAddreesses().Distinct();
 var urls = emailParser.GetUrls().Distinct();
 
 File.WriteAllLines("RecievedIPs.txt", ips);
-File.WriteAllLines("ULRs.txt", urls);
+File.WriteAllLines("URLs.txt", urls);
 
 Console.WriteLine($"{Environment.NewLine}There where {ips.Count()} IP Addrresses.");
 Console.WriteLine($"There where {urls.Count()} URLs.");
